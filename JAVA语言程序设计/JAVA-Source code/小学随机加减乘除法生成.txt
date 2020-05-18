@@ -1,0 +1,36 @@
+public static void main(String[]args){	
+		   int a0,a1,a2,a3,a4,a5,a6,a7,a8,a9;
+		   int i,j;
+		   int num;
+		   for(j=1;j<=20;j++) {
+			   System.out.printf("第%d套题目\n",j);
+			   num=1;
+			   for(i=0;i<5;i++) {
+				   a0=(int)(Math.random()*1000);
+				   a1=(int)(Math.random()*1000);
+				   a2=(int)(Math.random()*1000);
+				   a3=(int)(Math.random()*1000);
+				   a4=(int)(Math.random()*1000);
+				   a5=(int)(Math.random()*1000);
+				   a6=(int)(Math.random()*1000);
+				   a7=(int)(Math.random()*1000);
+				   a8=(int)(Math.random()*1000);
+				   a9=(int)(Math.random()*1000);
+				   System.out.printf("(%-3d)%2d+%2d=\n",num++,a9,a8);
+				   if(a0>=a1)
+					   System.out.printf("(%-3d)%2d-%2d=\n",num++,a0,a1);
+				   else
+					   System.out.printf("(%-3d)%2dx%2d=\n",num++,a1,a0);
+				      System.out.printf("(%-3d)%2d÷%2d=\n",num++,a7,a6);
+				      if(a3>=a4)
+				    	  System.out.printf("(%-3d)%2d÷%2d=\n",num++,a3,a4);
+				      else
+				    	  System.out.printf("(%-3d)%2d÷%2d=\n",num++,a4,a3);
+				      System.out.printf("(%-3d)%2d÷%2d=\n",num++,a5,a2);
+				      if(a5>=a2&&a2!=0)
+						  System.out.printf("(%-3d)%2d÷%2d=\n",num++,a5,a2);  
+					   else if (a5<a2&&a5!=0)
+						   System.out.printf("(%-3d)%2d÷%2d=\n",num++,a2,a5);
+			   }			    
+		   }
+		}

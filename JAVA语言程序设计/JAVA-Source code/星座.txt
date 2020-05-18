@@ -1,0 +1,55 @@
+static void star(int num)
+	{
+		switch(num) {
+		default:
+			System.out.println("输入数据超出范围！");
+			break;
+		case 1:	
+			System.out.println("水瓶座");
+			 break;
+		case 2:	
+			System.out.println("双鱼座");
+			 break;
+		case 3:		
+			System.out.println("白羊座");
+			 break;
+		case 4:	
+			System.out.println("金牛座");
+			 break;
+		case 5:
+			System.out.println("双子座");
+			 break;
+		case 6:
+			System.out.println("巨蟹座");
+			 break;
+		case 7:
+			System.out.println("狮子座");
+			 break;
+		case 8:
+			System.out.println("处女座");
+			 break;
+		case 9:
+			System.out.println("天秤座");
+			 break;
+		case 10:
+			System.out.println("天蝎座");
+			 break;
+		case 11:
+			System.out.println("射手座");
+			 break;
+		case 12:
+			System.out.println("摩羯座");
+		    break;		
+			}
+	}
+	
+	public static void main(String[] args) {
+		Scanner scan =new Scanner(System.in);
+		System.out.println("====显示星座====");
+		System.out.println("请输入一个数字：");
+		int num =scan.nextInt();
+		scan.close();
+		star(num);
+		
+	 }
+}

@@ -1,0 +1,24 @@
+public static void main (String[] args) {
+		 float a1,a2,a3,total;
+		   do { 
+		 System.out.println("请输入雨课堂各项成绩（0.3，0.3，0.4）\n");
+		    Scanner scan =new Scanner(System.in);
+		    System.out.println("请输入第一门课成绩（0~100）：");
+		   a1 =scan.nextInt();
+		   System.out.println("请输入第二门课成绩（0~100）：");
+		   a2 =scan.nextInt();
+		   System.out.println("请输入第三门课成绩（0~100）：");
+		   a3 =scan.nextInt();
+		   }while((a1<0||a2<0||a3<0||a1>100||a2>100||a3>100));
+		   total = (float) (a1*0.3+a2*0.3+a3*0.4);
+		   if(total>=90)
+		   {System.out.print("优\n");}
+		   else if(total>=80)
+		   {System.out.print("良\n");}
+		   else if(total>=70)
+		   {System.out.print("中\n");}
+		   else if(total>=60)
+		   {System.out.print("及格\n");}
+		   else
+			   System.out.print("不及格，加油！\n");
+			}
