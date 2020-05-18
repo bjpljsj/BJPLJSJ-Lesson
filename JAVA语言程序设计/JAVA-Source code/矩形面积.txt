@@ -1,0 +1,22 @@
+{
+	static double calcArea(double len, double wid){
+		  return len*wid;
+		 }
+		 static double calcGirth(double len, double wid){
+		  return (len + wid)*2;
+		 }
+		 public static void main(String[] args){
+		  System.out.println("----计算矩形面积周长----");
+		  Scanner scan = new Scanner(System.in);
+		  double length,width,area,girth;
+		  System.out.println("请输入矩形的长：");
+		  length = scan.nextDouble();
+		  System.out.println("请输入矩形的宽：");
+		  width = scan.nextDouble();
+		  area = calcArea(length,width);
+	  girth = calcGirth(length,width);
+	 System.out.printf("长为%.2f,宽为%.2f的矩形面积：%.2f",length,width,area);
+	 System.out.printf("\n长为%.2f，宽为%.2f的矩形周长：%.2f",length,width,girth);
+	 scan.close();
+	 }
+	}

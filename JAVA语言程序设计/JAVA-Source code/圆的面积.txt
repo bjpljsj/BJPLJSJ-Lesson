@@ -1,0 +1,20 @@
+{
+	static double calcArea(double r){
+		  return 3.14*r*r;
+		 }
+		 static double calcGirth(double r){
+		  return 2*3.14*r;
+		 }
+		 public static void main(String[] args){
+		  System.out.println("----计算圆面积周长----");
+		  Scanner scan = new Scanner(System.in);
+		  double radius,area,qirth;
+		  System.out.println("请输入圆的半径：");
+		  radius=scan.nextDouble();
+		  area = calcArea(radius);
+		  qirth =calcGirth(radius);
+		  System.out.printf("半径为%.2f的圆面积：%.2f",radius,area);
+		  System.out.printf("\n半径为%.2f的圆周长：%.2f",radius,qirth);
+		        scan.close();
+		 }
+	}

@@ -1,0 +1,23 @@
+public static void main (String []args){	  
+             System.out.println("  ====打折计价====  ");  
+             System.out.println("购买商品2000元以上，8折优惠"); 
+             System.out.println("购买商品1000元到2000元，8.5折优惠"); 
+             System.out.println("购买商品500元到1000元，9折优惠"); 
+             System.out.println("购买商品100元到500元，9.5折优惠"); 
+             double price,discount,discprice;
+             Scanner scan =new Scanner(System.in);
+             System.out.println("请输入商品价格："); 
+             price =scan.nextDouble();
+             scan.close();
+             if(price>=2000) {discount=0.8;}
+             else if(price>=1000) {discount=0.85;}
+             else if(price>=500) {discount=0.9;}
+             else if(price>=100) {discount=0.95;}
+             else if(price>0) {discount=1;}
+             else {
+            	 System.out.println("输入有误！");
+            	 return;
+             }
+            discprice=price*discount; 
+            System.out.printf("%.1f折，折扣价为￥%.2f",discount*10,discprice);
+      }  
