@@ -16,4 +16,5 @@ Visual C++6.0
 ## 其他备注
 计算机二级C语言可选考试(有升本需求推荐)  
 机房和二级使用的是VS2010
-升本使用VC 6.0
+升本使用VC 6.0  
+更多源代码[zcj924/C-learning](https://github.com/zcj924/C-learning)
